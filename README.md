@@ -65,7 +65,9 @@ module exp3(a,b,sum,carry);
 
 
 
+
 input a,b;
+
 
 
 
@@ -73,7 +75,9 @@ output sum,carry;
 
 
 
+
 xor g1(sum,a,b);
+
 
 
 
@@ -87,7 +91,9 @@ endmodule
 module exp3(a,b,diff,borrow);
 
 
+
 input a,b;
+
 
 
 
@@ -95,11 +101,14 @@ output diff,borrow;
 
 
 
+
 xor difference(diff,a,b);
 
 
 
+
 assign borrow=(~a)&b;
+
 
 
 
