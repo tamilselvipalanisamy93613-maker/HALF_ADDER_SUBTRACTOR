@@ -62,7 +62,6 @@ RegisterNumber:25017628*/
 
 
 module half_adder (
-
     input  wire a, b;
     
     output wire sum;
@@ -71,20 +70,17 @@ module half_adder (
     
     assign sum   = a ^ b;   
     assign carry = a & b;   
-
 endmodule
 
 
 
 module half_subtractor (
-
     input  wire a, b,   
     
     output wire diff, borrow );
     
     assign diff   = a ^ b;
-    assign borrow = ~a & b; 
-    
+    assign borrow = ~a & b;
 endmodule
 
 **RTL Schematic**
