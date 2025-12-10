@@ -34,7 +34,9 @@ Borrow = A’B
 Figure -02 HALF Subtractor
 
 **Truthtable**
+
 <img width="613" height="378" alt="Screenshot 2025-12-10 130747" src="https://github.com/user-attachments/assets/a4dc506a-729b-41c3-9368-247bb047df08" />
+
 <img width="581" height="436" alt="Screenshot 2025-12-10 130814" src="https://github.com/user-attachments/assets/91630dd1-5da1-49d6-b19e-a7d1ce43dcbd" />
 
 
@@ -61,22 +63,37 @@ RegisterNumber:25017628*/
 
 module exp3(a,b,sum,carry);
 
+
 input a,b;
+
 
 output sum,carry;
 
+
 xor g1(sum,a,b);
 
+
 and g2(carry,a,b);
+
 
 endmodule
 
 
 module exp3(a,b,diff,borrow);
+
+
 input a,b;
+
+
 output diff,borrow;
+
+
 xor difference(diff,a,b);
+
+
 assign borrow=(~a)&b;
+
+
 endmodule
 
 **RTL Schematic**
