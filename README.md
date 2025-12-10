@@ -61,57 +61,27 @@ Developed by:TAMILSELVI.P
 RegisterNumber:25017628*/
 
 
-module exp3(a,b,sum,carry);
+module half_adder (
+    input  wire a, b,     
+    output wire sum,      
+    output wire carry     
+);
 
-
-
-
-input a,b;
-
-
-
-
-output sum,carry;
-
-
-
-
-xor g1(sum,a,b);
-
-
-
-
-and g2(carry,a,b);
-
-
+    
+    assign sum   = a ^ b;   
+    assign carry = a & b;   
 
 endmodule
 
 
-module exp3(a,b,diff,borrow);
+module half_subtractor (
+    input  wire a, b,         
+    output wire diff, borrow  
+);
 
-
-
-input a,b;
-
-
-
-
-output diff,borrow;
-
-
-
-
-xor difference(diff,a,b);
-
-
-
-
-assign borrow=(~a)&b;
-
-
-
-
+    
+    assign diff   = a ^ b;
+    assign borrow = ~a & b;    
 endmodule
 
 **RTL Schematic**
