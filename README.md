@@ -62,8 +62,11 @@ RegisterNumber:25017628*/
 
 
 module half_adder (
-    input  wire a, b;     
-    output wire sum,      
+
+    input  wire a, b,
+    
+    output wire sum, 
+    
     output wire carry     
 );
 
@@ -74,8 +77,11 @@ module half_adder (
 endmodule
 
 
+
 module half_subtractor (
-    input  wire a, b,         
+
+    input  wire a, b,   
+    
     output wire diff, borrow  
 );
 
