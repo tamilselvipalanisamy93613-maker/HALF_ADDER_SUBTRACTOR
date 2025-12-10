@@ -67,10 +67,7 @@ module half_adder (
     
     output wire sum;
     
-    output wire carry 
-    
-);
-
+    output wire carry );
     
     assign sum   = a ^ b;   
     assign carry = a & b;   
@@ -83,10 +80,8 @@ module half_subtractor (
 
     input  wire a, b,   
     
-    output wire diff, borrow 
+    output wire diff, borrow );
     
-);
-
     assign diff   = a ^ b;
     assign borrow = ~a & b; 
     
