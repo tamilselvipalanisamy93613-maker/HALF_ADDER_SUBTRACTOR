@@ -59,7 +59,7 @@ Figure -02 HALF Subtractor
 
 Developed by:TAMILSELVI.P
 RegisterNumber:25017628*/
-
+```
 
 module half_adder (
 
@@ -74,9 +74,9 @@ module half_adder (
     assign carry = a & b;
     
 endmodule
+```
 
-
-
+```
 module half_subtractor (
 
 
@@ -88,7 +88,7 @@ module half_subtractor (
     assign borrow = ~a & b;
     
 endmodule
-
+```
 **RTL Schematic**
 <img width="985" height="465" alt="Screenshot 2025-12-09 204312" src="https://github.com/user-attachments/assets/e7a775bf-6638-4a49-b0d9-0dba0a413e6a" />
 
